@@ -7,6 +7,27 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #012c18;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #03542e;
+    border: 0px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #06b663;
+}
+
+
 /* -- Navbar Section -- */
 .navbar__top {
     background: #181818;
