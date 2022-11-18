@@ -27,7 +27,6 @@ body {
     background: #06b663;
 }
 
-
 /* -- Navbar Section -- */
 .navbar__top {
     background: #181818;
@@ -170,7 +169,7 @@ body {
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 99;
-        height: 70vh;
+        height: 150vw;
         font-size: 1.6rem;
         padding: 0;
     }
