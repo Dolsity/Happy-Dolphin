@@ -34,6 +34,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: sticky;
 }
 
 .navbar__top__inside {
@@ -223,5 +224,62 @@ body {
   
     #mobile-menu.is-active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+
+/* -- Section 1/3-- */
+.home {
+    background: linear-gradient(#80808069,#258bb38b),url("../styles/img/zoom.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 150px 0;
+}
+
+.home__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home__container_welcome {
+    font-size: 80px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+    letter-spacing: 0.2rem;
+}
+
+.home__container_typer {
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.home__container span.cursor {
+    display: inline-block;
+    background-color: #cccccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%  { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #ccc; }
+}
+
+@media screen and (max-width: 600px) {
+    .home__container_welcome {
+        font-size: 63px;
+    }
+
+    .home__container_typer {
+        font-size: 28px;
     }
 }
