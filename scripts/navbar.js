@@ -2,6 +2,7 @@ const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.navbar__menu');
 const navLogo = document.querySelector('#navbar__logo');
 
+
 const mobileMenu = () => {
   menu.classList.toggle('is-active');
   menuLinks.classList.toggle('active');
@@ -10,7 +11,7 @@ const mobileMenu = () => {
 menu.addEventListener('click', mobileMenu);
 
 const highlightMenu = () => {
-  if ((elem && window.innerWidth < 960 && scrollPos < 600) || elem) {
+  if ((elem && window.innerWidth < 1060 && scrollPos < 600) || elem) {
     elem.classList.remove('highlight');
   }
 };
