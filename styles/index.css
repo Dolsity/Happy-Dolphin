@@ -1,5 +1,5 @@
 body {
-    background: #131313;
+    background: #222222;
     background-size: cover;
     box-sizing: border-box;
     margin: 0;
@@ -294,14 +294,16 @@ body {
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: #999999;
+    background-color: #bababa;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
+    margin-bottom: 15px;
 }
+
 .active,
 .dot:hover {
-    background-color: #111111;
+    background-color: #424242;
 }
 
 .fade {
@@ -310,14 +312,16 @@ body {
     animation-name: fade;
     animation-duration: 1.5s;
 }
+
 @-webkit-keyframes fade {
     from {
     opacity: .4
     }
     to {
     opacity: 1
-    }
+   }
 }
+
 @keyframes fade {
     from {
     opacity: .4
@@ -332,5 +336,31 @@ body {
     .next,
     .text {
     font-size: 11px
+    }
+}
+
+/* -- Section 2/- -- */
+.free__quote {
+    background: #131313;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.free__quote__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.free__quote__container h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.1rem;
+}
+
+@media screen and (max-width: 500px) {
+    .free__quote__container h1 {
+        font-size: 18px;
     }
 }
