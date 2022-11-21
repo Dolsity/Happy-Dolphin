@@ -354,13 +354,37 @@ body {
 
 .free__quote__container h1 {
     font-size: 30px;
-    font-weight: 700;
     color: #ffffff;
     letter-spacing: 0.1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.location {
+    background: #06b663;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.location__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.location__container h1 {
+    font-size: 25px;
+    color: #ffffff;
+    letter-spacing: 0.1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
 }
 
 @media screen and (max-width: 500px) {
     .free__quote__container h1 {
         font-size: 18px;
+    }
+
+    .location__container h1 {
+        font-size: 15px;
     }
 }
